@@ -15,19 +15,10 @@ ADD Gemfile /opt/data/Gemfile
 WORKDIR /opt/data
 RUN bundle install
 
-
-# install octopress
-#WORKDIR /tmp
-#RUN gem install --no-ri --no-rdoc bundler
-#RUN gem install --no-ri --no-rdoc octopress
-
-#RUN gem install --no-ri --no-rdoc jekyll-sitemap jekyll-paginate
-#RUN gem install --no-ri --no-rdoc rdiscount kramdown pygments.rb
-
+# install pygments
 RUN pip install -U pip
 RUN pip install pygments --upgrade
 
-VOLUME /src
 EXPOSE 80
 
 RUN mkdir /jekyll
