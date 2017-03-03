@@ -1,0 +1,6 @@
+sudo: require
+
+services:
+  - docker
+script:
+  - docker build -t danshan/shanhh-docker .
