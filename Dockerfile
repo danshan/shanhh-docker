@@ -14,7 +14,7 @@ RUN gem install --no-ri --no-rdoc bundler
 RUN gem install --no-ri --no-rdoc octopress
 
 # install jekyll
-RUN gem install --no-ri --no-rdoc jekyll-sitemap jekyll-paginate
+RUN gem install --no-ri --no-rdoc jekyll-sitemap jekyll-paginate jekyll-coffeescript
 RUN gem install --no-ri --no-rdoc rdiscount kramdown pygments.rb
 
 RUN pip install -U pip
