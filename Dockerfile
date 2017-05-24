@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER i@shanhh.com
+MAINTAINER Dan Shan <i@shanhh.com>
 
 RUN apt-get update
 RUN apt-get install -y software-properties-common
